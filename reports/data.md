@@ -1,8 +1,3 @@
-### Selection of samples for whole-genome sequencing 
-
-We leveraged RNA sequencing data from 105 Glossophaga soricina bats to conduct an initial relatedness inference analysis, which revealed distinct kinship patterns between two colonies and guided the strategic selection of 20 representative individuals for comprehensive long-read genome sequencing, ensuring optimal coverage of the population's genetic diversity while minimizing redundancy in closely related specimens.
-
-
 ### Preparing the data  
 
 #### 1. Raw sequence data processing  
@@ -28,3 +23,9 @@ Using pacBio data (1b) .
 #### 5. Phenotypes summary stats (SILVIA, ERNESTINE, ANGELA)
 Descriptive stats for phenotypic data, regression, transformation 
 
+**Visualizations:**
+- [Phenotype Distribution Check](img/checkPhenoDistribution.png)
+
+- [Phenotype Analysis](img/phenotype.png)
+- [Sequenced Phenotype Data](img/sequenced_phenotype.png)
+- [Sequenced Phenotype Distribution Check](img/sequencedCheckPhenoDistribution.png)
