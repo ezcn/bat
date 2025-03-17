@@ -34,9 +34,7 @@ pca_df['Animal_ID'] = genetic_data.index
 pca_df.head()
 ```
 
-
-<img src="https://github.com/MarsicoFL/batPed/assets/55600771/5072c38c-96ef-4173-b36c-f606f1b6e376" width="80%">
-
+- [PCA](https://github.com/MarsicoFL/batPed/assets/55600771/5072c38c-96ef-4173-b36c-f606f1b6e376)
 
 The selection!
 
