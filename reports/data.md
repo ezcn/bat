@@ -2,15 +2,27 @@
 
 #### 1. Raw sequence data processing  
 
-##### Ultralong ONT data processing → Herro + assembly (LAURA, DARIO, FLAVIA)
+##### 1a Ultralong ONT data processing → Herro + assembly (LAURA, DARIO, FLAVIA)
+- Sequence quality before coreection 
 
-Nanoplot plots before and after correction  
+- Assembly before correction with Fly 
+	how many scaffold scaffold length N50
 
-##### PacBio data processing → assembly   
+- Herro correction done 
+
+- Assembly after correction with Fly 
+- Assembly after correction with Shasta   
+
+##### 1b PacBio data processing → assembly   
+
 
 #### 2.  Pangenome graph induction (FRANCO) 
-Using 1a, 1b + publicly available data →  
-Chr15 mutica vs our only assembly rough estimate of divergence/ similarity 
+- Using 1a, 1b + publicly available data 
+
+- Chr15 mutica vs our only assembly rough estimate of divergence/ similarity 
+
+- Test with data from  Tillman 
+		 alignment of chr15 with mutica 
 
 #### 3. Detection of genetic variants (ERNESTINE, ANGELA)
 Genomic Variant calling in 21 bats using 1a, 1b. 
@@ -34,3 +46,5 @@ Using pacBio data (1b) .
 
 ##### Sequenced bats - colonies, males, females 
 - [Sequenced Phenotype Data](img/sequenced_phenotype.png)
+
+- questions: units, right eye -5, one table is in german 
