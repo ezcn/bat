@@ -21,11 +21,16 @@ mtDNA variant calling and copy number from 1a, 1b
 Using pacBio data (1b) . 
 
 #### 5. Phenotypes summary stats (SILVIA, ERNESTINE, ANGELA)
-Descriptive stats for phenotypic data, regression, transformation 
+**Descriptive stats for phenotypic data**
 
-**Visualizations:**
+##### All bats 
 - [Phenotype Distribution Check](img/checkPhenoDistribution.png)
 
-- [Phenotype Analysis](img/phenotype.png)
-- [Sequenced Phenotype Data](img/sequenced_phenotype.png)
+##### Sequenced bats 
 - [Sequenced Phenotype Distribution Check](img/sequencedCheckPhenoDistribution.png)
+
+##### All bats - colonies, males, females 
+- [Phenotype Analysis](img/phenotype.png)
+
+##### Sequenced bats - colonies, males, females 
+- [Sequenced Phenotype Data](img/sequenced_phenotype.png)
