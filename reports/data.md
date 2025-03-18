@@ -3,13 +3,9 @@
 #### 1. Raw sequence data processing  
 
 ##### 1a Ultralong ONT data processing → Herro + assembly (LAURA, DARIO, FLAVIA)
-- Sequence quality before coreection 
-
+- Sequence quality before coreection (see the pdf) 
 - Assembly before correction with Fly 
-	how many scaffold scaffold length N50
-
 - Herro correction done 
-
 - Assembly after correction with Fly 
 - Assembly after correction with Shasta   
 
