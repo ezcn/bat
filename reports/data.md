@@ -43,4 +43,4 @@ Using pacBio data (1b) .
 ##### Sequenced bats - colonies, males, females 
 - [Sequenced Phenotype Data](img/sequenced_phenotype.png)
 
-- questions: units, right eye -5, one table is in german , stratify by pregnancy 
+- questions: units, right eye -5, one table is in german , stratify by pregnancy
