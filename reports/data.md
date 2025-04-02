@@ -4,21 +4,34 @@
 
 ##### 1a Ultralong ONT data processing → Herro + assembly (LAURA, DARIO, FLAVIA)
 - Sequence quality before coreection (see the pdf) 
+- Assembly before correction with Shasta -DONE 
 - Assembly before correction with Fly 
-- Herro correction done 
+- Herro correction DONE 
+- Assembly after correction with Shasta   DONE 
 - Assembly after correction with Fly 
-- Assembly after correction with Shasta   
+- [Shasta - beforeAfter](img/read_length_histogram.png)
+
 
 ##### 1b PacBio data processing → assembly   
 
 
 #### 2.  Pangenome graph induction (FRANCO) 
-- Using 1a, 1b + publicly available data 
+- Using 1a, 1b + publicly available data and what we have so far: 
 
-- Chr15 mutica vs our only assembly rough estimate of divergence/ similarity 
+-- Glossophaga commissarisi: 146 GB of HIFi, HiC 
+-- Glossophaga soricina (pure): HiFi + HiC 
+-- Glossophaga mutica (pure): GCA_039655065.1 on NCBI
 
-- Test with data from  Tillman 
-		 alignment of chr15 with mutica 
+- Rough estimate of divergence/ similarity 
+Performed an alignment using minimap2 and and mummer (local). 
+Filtering removed redundant (overlapped) or low-confidence alignments:
+-- Total high-confidence non-overlapped aligned segments: 6
+-- Query coverage (Soricina): 99.64% 
+-- Reference coverage (Mutica): 92.61%
+-- Average sequence identity: 57.47% (potential errors?)
+
+- Preliminary graph - chromosome 15:  
+- [Pangenome graph](img/bat_pangenome.png)
 
 #### 3. Detection of genetic variants (ERNESTINE, ANGELA)
 Genomic Variant calling in 21 bats using 1a, 1b. 
@@ -43,4 +56,4 @@ Using pacBio data (1b) .
 ##### Sequenced bats - colonies, males, females 
 - [Sequenced Phenotype Data](img/sequenced_phenotype.png)
 
-- questions: units, right eye -5, one table is in german , stratify by pregnancy
+**Descriptive stats for metabolomic data**
