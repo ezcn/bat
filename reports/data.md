@@ -3,12 +3,15 @@
 #### 1. Raw sequence data processing  
 
 ##### 1a Ultralong ONT data processing → Herro + assembly (LAURA, DARIO, FLAVIA)
-- Sequence quality before coreection (see the pdf) 
-- Assembly before correction with Shasta -DONE 
-- Assembly before correction with Fly 
+- Sequence quality before correction (see the pdf) 
+- Assembly before correction 
+    - with Shasta -DONE 
+    - with Fly 
 - Herro correction DONE 
-- Assembly after correction with Shasta   DONE 
-- Assembly after correction with Fly 
+- Assembly after correction 
+    - with Shasta   DONE 
+    - with Fly 
+
 - [Shasta - beforeAfter](img/read_length_histogram.png)
 
 
@@ -31,7 +34,7 @@ Filtering removed redundant (overlapped) or low-confidence alignments:
     - -- Average sequence identity: 57.47% (potential errors?)
 
 - Preliminary graph - chromosome 15:  
-- [Pangenome graph](img/bat_pangenome.png)
+    - [Pangenome graph](img/bat_pangenome.png)
 
 #### 3. Detection of genetic variants (ERNESTINE, ANGELA)
 Genomic Variant calling in 21 bats using 1a, 1b. 
