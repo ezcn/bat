@@ -1,17 +1,6 @@
 #!/usr/bin/env python3
 import os 
-
-
-#### USAGE 
-# Generate both CSV output and histogram
-#python script.py input.fastq input.fasta
-
-# Save CSV to a file and generate histogram
-#python script.py input.fastq input.fasta -o results.csv
-
-# Only generate CSV without plotting
-#python script.py input.fastq input.fasta --no-plot
-############################################3
+#!/usr/bin/env python3
 
 def parse_fastq(fastq_file):
     """
@@ -108,7 +97,7 @@ def compare_sequences(fastq_file, fasta_file):
     
     return results
 
-def plot_length_histograms(results, fastq_file):
+def plot_length_histograms(results, fastq_file, fasta_file):
     """
     Plot histograms of sequence lengths for FASTQ and FASTA files.
     
@@ -142,27 +131,31 @@ def plot_length_histograms(results, fastq_file):
         max_length = max(all_lengths) if all_lengths else 100
         bins = np.linspace(min_length, max_length, 30)
         
+        # Get filenames for annotation
+        fastq_basename = os.path.basename(fastq_file)
+        fasta_basename = os.path.basename(fasta_file)
+        
         # Plot FASTQ histogram
         ax1.hist(fastq_lengths, bins=bins, alpha=0.7, color='blue')
-        ax1.set_title('FASTQ Sequences Lengths')
+        ax1.set_title('FASTQ Sequence Lengths')
         ax1.set_ylabel('Frequency')
         ax1.grid(alpha=0.3)
-        ax1.text(0.95, 0.95, f'Total: {len(fastq_lengths)} reads', 
+        ax1.text(0.95, 0.95, f'Total: {len(fastq_lengths)} reads\nFile: {fastq_basename}', 
                  transform=ax1.transAxes, ha='right', va='top',
                  bbox=dict(boxstyle='round', facecolor='white', alpha=0.7))
         
         # Plot FASTA histogram (only if there are matching sequences)
         if fasta_lengths:
             ax2.hist(fasta_lengths, bins=bins, alpha=0.7, color='green')
-            ax2.set_title('FASTA Sequences Lengths (Matching Sequences Only)')
+            ax2.set_title('FASTA Sequence Lengths (Matching Sequences Only)')
             ax2.set_xlabel('Length')
             ax2.set_ylabel('Frequency')
             ax2.grid(alpha=0.3)
-            ax2.text(0.95, 0.95, f'Total: {matching_count} reads', 
+            ax2.text(0.95, 0.95, f'Total: {matching_count} reads\nFile: {fasta_basename}', 
                      transform=ax2.transAxes, ha='right', va='top',
                      bbox=dict(boxstyle='round', facecolor='white', alpha=0.7))
         else:
-            ax2.text(0.5, 0.5, 'No matching sequences found in FASTA file', 
+            ax2.text(0.5, 0.5, f'No matching sequences found in FASTA file: {fasta_basename}', 
                      transform=ax2.transAxes, ha='center', va='center')
             ax2.set_xlabel('Length')
         
@@ -171,12 +164,8 @@ def plot_length_histograms(results, fastq_file):
         ax1.set_ylim(0, y_max)
         ax2.set_ylim(0, y_max)
         
-        # Add a main title with the FASTQ filename
-        fastq_basename = os.path.basename(fastq_file)
-        fig.suptitle(f"{fastq_basename}", fontsize=14, fontweight='bold')
-        
         # Adjust layout and save
-        plt.tight_layout(rect=[0, 0, 1, 0.96])  # Make room for the suptitle
+        plt.tight_layout()
         plot_filename = f"{fastq_basename}_histograms.png"
         plt.savefig(plot_filename)
         print(f"Histogram plot saved as '{plot_filename}'")
@@ -220,7 +209,7 @@ def main():
     
     # Generate histograms unless disabled
     if not args.no_plot:
-        plot_length_histograms(results, args.fastq_file)
+        plot_length_histograms(results, args.fastq_file, args.fasta_file)
 
 if __name__ == "__main__":
     main()
