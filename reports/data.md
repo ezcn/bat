@@ -17,12 +17,13 @@
 
 ##### 1b PacBio data processing → assembly   
 
-    -Test twice (Franco and Flavia) using Hifiasm GS0138, GSO435 --> too many contings
-    - See the [figure assmblyhifiasm](img/assembly_metrics_pacbio.png)
-    - -- (1)  check for contaminats;   
-    - -- (2)  try verkko;   
+- Test twice (Franco and Flavia) using Hifiasm GS0138, GSO435 --> too many contings
+- See the [figure assmblyhifiasm](img/assembly_metrics_pacbio.png)
+    - -- (1) check for contaminats;   
+    - -- (2) try verkko;   
     - -- (3) align over reference 
     - -- (4) use reads > 15-20k  
+    - -- (5) use sam data as Tillman (no HiC)
 
 #### 2.  Pangenome graph induction (FRANCO) 
 - Using 1a, 1b + publicly available data and what we have so far: 
