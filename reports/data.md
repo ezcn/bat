@@ -17,6 +17,12 @@
 
 ##### 1b PacBio data processing → assembly   
 
+    -Test twice (Franco and Flavia) using Hifiasm GS0138, GSO435 --> too many contings
+    - See the [figure assmblyhifiasm](img/assembly_metrics_pacbio.png)
+    - -- (1)  check for contaminats;   
+    - -- (2)  try verkko;   
+    - -- (3) align over reference 
+    - -- (4) use reads > 15-20k  
 
 #### 2.  Pangenome graph induction (FRANCO) 
 - Using 1a, 1b + publicly available data and what we have so far: 
@@ -26,6 +32,8 @@
     - -- Glossophaga mutica (pure): GCA_039655065.1 on NCBI
 
 - Rough estimate of divergence/ similarity 
+
+    - -- Self-silmilarity [see figure chr15 hap1vs hap2]()
 Performed an alignment using minimap2 and and mummer (local). 
 Filtering removed redundant (overlapped) or low-confidence alignments:
     - -- Total high-confidence non-overlapped aligned segments: 6
