@@ -19,11 +19,12 @@
 
 - Test twice (Franco and Flavia) using Hifiasm GS0138, GSO435 --> too many contings
 - See the [figure assmblyhifiasm](img/assembly_metrics_pacbio.png)
-    - -- (1) check for contaminats;   
-    - -- (2) try verkko;   
-    - -- (3) align over reference 
-    - -- (4) use reads > 15-20k  
-    - -- (5) use sam data as Tillman (no HiC)
+    - -- (1) 2 x pool 4 individuals from the same colony and build a primary assembly
+    - -- (2) TBG-5130 assembly with 4 fq files
+    - -- (3) use same data as Tillman (no HiC, downsampling to 10X (30Gb))
+    - -- (4) check for contaminats;   
+    - -- (5) try verkko;   
+    - -- (6) align over reference 
 
 #### 2.  Pangenome graph induction (FRANCO) 
 - Using 1a, 1b + publicly available data and what we have so far: 
