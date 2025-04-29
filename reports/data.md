@@ -2,7 +2,7 @@
 
 #### 1. Raw sequence data processing  
 
-##### 1a Ultralong ONT data processing → Herro + assembly (LAURA, DARIO, FLAVIA)
+##### 1a Ultralong ONT data processing → Herro + assembly (LAURA, DARIO)
 - Sequence quality before correction (see the pdf) 
 - Assembly before correction 
     - with Shasta 
@@ -12,12 +12,12 @@
     - with Shasta   
     - with Fly 
 
-##### 1b PacBio data processing 
+##### 1b PacBio data processing (FLAVIA, FRANCO)
 - Assemblies:  done 
 
-[figure assmblyhifiasm primary](img/assembly_metrics_all_h1_h2.png)
+[figure assmblyhifiasm primary](img/assembly_metrics_primary_only.pdf)
 
-[figure assmblyhifiasm haploid](img/assembly_metrics_primary_only.pdf)
+[figure assmblyhifiasm haploid](img/assembly_metrics_all_h1_h2.png) 
 
 [figure contiguity ](img/contiguity_plot.pdf)
 
