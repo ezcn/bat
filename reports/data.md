@@ -17,7 +17,7 @@
 
 [figure assmblyhifiasm primary](img/assembly_metrics_primary_only.pdf)
 
-[figure assmblyhifiasm haploid](img/assembly_metrics_all_h1_h2.png) 
+[figure assmblyhifiasm haploid](img/assembly_metrics_all_h1_h2.pdf) 
 
 [figure contiguity ](img/contiguity_plot.pdf)
 
