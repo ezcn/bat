@@ -5,44 +5,39 @@
 ##### 1a Ultralong ONT data processing → Herro + assembly (LAURA, DARIO, FLAVIA)
 - Sequence quality before correction (see the pdf) 
 - Assembly before correction 
-    - with Shasta -DONE 
+    - with Shasta 
     - with Fly 
-- Herro correction DONE 
+- Herro correction  
 - Assembly after correction 
-    - with Shasta   DONE 
+    - with Shasta   
     - with Fly 
 
-- [Shasta - beforeAfter](img/read_length_histogram.png)
-
-
-##### 1b PacBio data processing → assembly  
-
-QUESTION: does anybody know the position of the centromere?  is it possible to add more sequencing for the samples with low coverage ? which should be considered the reference sequence? 
-
+##### 1b PacBio data processing 
 - Assemblies:  done 
           [figure assmblyhifiasm primary ](img/assembly_metrics_pacbio.png)
+
           [figure assmblyhifiasm haploid](img/assembly_metrics_pacbio.png)
+
           [figure contiguity ](img/assembly_metrics_pacbio.png)
+
           [figure coverage](img/assembly_metrics_pacbio.png)
+
           [figure contigs length distribution ](img/assembly_metrics_pacbio.png)
 
 Next steps: 
-       - assign contigs to chromosomes (permissive alignment whole genome one sample vs (a) mutica, (b) sorcina, (c) commissarii) 
+ - assign contigs to chromosomes (permissive alignment whole genome one sample vs (a) mutica, (b) sorcina, (c) commissarii) 
 
 
-
-- Replicate Tilman 
+*- [not necessary] Replicate Tilman 
     - -- (1) use same data as Tillman (no HiC, downsampling to 10X (30Gb))
     Reassembled Commissari with only HiFi:
             - H1: 118 contigs (194 contigs in Tilman's data)
             - H2: 112 contigs (181 contigs in Tilman's data))
             - primary: 93 contigs
-
     - -  (4) polish assemblies https://github.com/ChongLab/Inspector?tab=readme-ov-file
     - -- (5) check for contaminats;   
     - -- (6) try verkko;   
-    - -- (7) align over reference 
-
+    - -- (7) align over reference* 
 
 
 #### 2.  Pangenome graph induction (FRANCO) 
@@ -66,9 +61,9 @@ Filtering removed redundant (overlapped) or low-confidence alignments:
     - [Pangenome graph](img/bat_pangenome.png)
 
 #### 3. Detection of genetic variants (ERNESTINE, ANGELA)
-Genomic Variant calling in 21 bats using 1a, 1b. 
-PanGenomic Variant calling in 21 bats using 2 
-mtDNA variant calling and copy number from 1a, 1b
+- Genomic Variant calling in 21 bats using 1a, 1b. 
+- PanGenomic Variant calling in 21 bats using 2 
+- mtDNA variant calling and copy number from 1a, 1b
 
 #### 4. Methylation profiles 
 Using pacBio data (1b) . 
