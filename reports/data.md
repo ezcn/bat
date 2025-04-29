@@ -15,16 +15,35 @@
 - [Shasta - beforeAfter](img/read_length_histogram.png)
 
 
-##### 1b PacBio data processing → assembly   
+##### 1b PacBio data processing → assembly  
 
-- Test twice (Franco and Flavia) using Hifiasm GS0138, GSO435 --> too many contings
-- See the [figure assmblyhifiasm](img/assembly_metrics_pacbio.png)
-    - -- (1) 2 x pool 4 individuals from the same colony and build a primary assembly
-    - -- (2) TBG-5130 assembly with 4 fq files
-    - -- (3) use same data as Tillman (no HiC, downsampling to 10X (30Gb))
-    - -- (4) check for contaminats;   
-    - -- (5) try verkko;   
-    - -- (6) align over reference 
+QUESTION: does anybody know the position of the centromere?  is it possible to add more sequencing for the samples with low coverage ? which should be considered the reference sequence? 
+
+- Assemblies:  done 
+          [figure assmblyhifiasm primary ](img/assembly_metrics_pacbio.png)
+          [figure assmblyhifiasm haploid](img/assembly_metrics_pacbio.png)
+          [figure contiguity ](img/assembly_metrics_pacbio.png)
+          [figure coverage](img/assembly_metrics_pacbio.png)
+          [figure contigs length distribution ](img/assembly_metrics_pacbio.png)
+
+Next steps: 
+       - assign contigs to chromosomes (permissive alignment whole genome one sample vs (a) mutica, (b) sorcina, (c) commissarii) 
+
+
+
+- Replicate Tilman 
+    - -- (1) use same data as Tillman (no HiC, downsampling to 10X (30Gb))
+    Reassembled Commissari with only HiFi:
+            - H1: 118 contigs (194 contigs in Tilman's data)
+            - H2: 112 contigs (181 contigs in Tilman's data))
+            - primary: 93 contigs
+
+    - -  (4) polish assemblies https://github.com/ChongLab/Inspector?tab=readme-ov-file
+    - -- (5) check for contaminats;   
+    - -- (6) try verkko;   
+    - -- (7) align over reference 
+
+
 
 #### 2.  Pangenome graph induction (FRANCO) 
 - Using 1a, 1b + publicly available data and what we have so far: 
