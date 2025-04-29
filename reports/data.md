@@ -14,15 +14,18 @@
 
 ##### 1b PacBio data processing 
 - Assemblies:  done 
-          [figure assmblyhifiasm primary ](img/assembly_metrics_pacbio.png)
 
-          [figure assmblyhifiasm haploid](img/assembly_metrics_pacbio.png)
+[figure assmblyhifiasm primary](img/assembly_metrics_all_h1_h2.png)
 
-          [figure contiguity ](img/assembly_metrics_pacbio.png)
+[figure assmblyhifiasm haploid](img/assembly_metrics_primary_only.pdf)
 
-          [figure coverage](img/assembly_metrics_pacbio.png)
+[figure contiguity ](img/contiguity_plot.pdf)
 
-          [figure contigs length distribution ](img/assembly_metrics_pacbio.png)
+[figure coverage](img/coverage_distribution_summary.png)
+
+[figure contigs length distribution](img/contig_length_distribution_faceted.png) 
+
+[figure contigs length distribution without low quality samples](img/contig_length_histogram_filtered.png)
 
 Next steps: 
  - assign contigs to chromosomes (permissive alignment whole genome one sample vs (a) mutica, (b) sorcina, (c) commissarii) 
