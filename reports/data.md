@@ -43,7 +43,7 @@ Next steps:
     - -- (7) align over reference* 
 
 
-#### 2.  Pangenome graph induction (FRANCO) 
+#### 2.  Pangenome graph induction (FRANCO)  
 - Using 1a, 1b + publicly available data and what we have so far: 
 
     - -- Glossophaga commissarisi: 146 GB of HIFi, HiC 
@@ -62,6 +62,15 @@ Filtering removed redundant (overlapped) or low-confidence alignments:
 
 - Preliminary graph - chromosome 15:  
     - [Pangenome graph](img/bat_pangenome.png)
+
+
+#### 2a Pangenome ( SILVIA )
+2a1. for each bat: 
+- aligned (minimap) the diploid assembly against  Glossophaga mutica (pure): GCA_039655065.1 on NCBI - haplotype A 
+considering: align all bats (one by one) versus one of the 20 bats because different position of centromeres in mutica and our bats 
+
+- variant calling using vg giraffe 
+
 
 #### 3. Detection of genetic variants (ERNESTINE, ANGELA)
 - Genomic Variant calling in 21 bats using 1a, 1b. 
